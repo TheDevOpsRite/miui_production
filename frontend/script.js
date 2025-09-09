@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.append('wmp', '1');
             if (loadingMessage) loadingMessage.textContent = 'Processing video (this may take longer)';
         } else {
-            if (loadingMessage) loadingMessage.textContent = 'Loading...';
+            if (loadingMessage) loadingMessage.textContent = 'Decrypting...Please give us a minute.';
         }
         try {
             if (overlay) overlay.style.display = 'flex';
