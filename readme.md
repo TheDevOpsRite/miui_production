@@ -18,7 +18,7 @@ Replace `<repository-url>` with the actual URL of this repository.
 Navigate to the project directory and install the required Python packages:
 
 ```powershell
-cd "c:\Users\Shivam\Desktop\Devops basics\miui-lsa"
+cd "c:\Users\Username\Desktop\Devops basics\miui-lsa"
 pip install -r requirements.txt
 ```
 
