@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             const metaApi = document.querySelector('meta[name="api-base"]')?.getAttribute('content') || '';
             const envBase = '';
-            const fallback = 'http://localhost:8000';
+            const fallback = 'https://miui-lsav-decryptor-backend.onrender.com';
             const base = (metaApi && metaApi.trim()) ? metaApi.trim() : (envBase || fallback);
             const response = await fetch(`${base}/api/decrypt`, {
                 method: 'POST',
