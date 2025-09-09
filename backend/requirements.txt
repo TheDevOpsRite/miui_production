@@ -1,0 +1,5 @@
+Flask
+pycryptodome
+filetype
+flask-cors
+gunicorn
