@@ -32,6 +32,10 @@ def decrypt_file_bytes(data_bytes: bytes) -> bytes:
     aes = AES.new(secretKey, mode=AES.MODE_CTR, counter=ctr)
     return aes.decrypt(data_bytes)
 
+@app.route("/", methods=["GET"]) 
+def index(): 
+    return "OK"
+
 @app.route('/api/decrypt', methods=['POST'])
 def api_decrypt():
     if 'file' not in request.files:
