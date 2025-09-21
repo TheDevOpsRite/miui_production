@@ -2,7 +2,7 @@
 // Select a file, send to FastAPI backend, receive decrypted image, show download link
 
 document.addEventListener('DOMContentLoaded', function() {
-    const MAX_UPLOAD_BYTES = 600 * 1024 * 1024; // 50 MB
+    const MAX_UPLOAD_BYTES = 610 * 1024 * 1024; // 50 MB
     const fileInput = document.getElementById('fileInput');
     const resultDiv = document.getElementById('result');
     const decryptBtn = document.getElementById('decryptBtn');
