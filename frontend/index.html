@@ -4,7 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIUI LSA Decryptor</title>
+    <title>MIUI LSA/LSAV Decryptor – Online Xiaomi MIUI Backup Decryption (≤50MB)</title>
+
+    <!-- Preload CSS for faster first paint (keeps existing stylesheet link) -->
+    <link rel="preload" href="style.css" as="style" />
+
+    <!-- Canonical + hreflang: update canonical URL if your deployed path differs -->
+    <link rel="canonical" href="https://devopsrite.vercel.app/miui-lsa-decryptor" />
+    <link rel="alternate" hreflang="en" href="https://devopsrite.vercel.app/miui-lsa-decryptor" />
+    <link rel="alternate" hreflang="x-default" href="https://devopsrite.vercel.app/miui-lsa-decryptor" />
+
+    <!-- Sitemap link -->
+    <link rel="sitemap" type="application/xml" href="https://devopsrite.vercel.app/sitemap.xml" />
+
+    <!-- Add manifest for richer app metadata -->
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <!-- SEO meta -->
+    <meta name="description" content="Free online MIUI LSA/LSAV decryptor. Decrypt Xiaomi MIUI backup files (.lsa, .lsav) up to 50MB securely in your browser." />
+    <meta name="keywords" content="MIUI, LSA, LSAV, decryptor, Xiaomi, MIUI backup, decrypt .lsa, decrypt .lsav, online tool" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="author" content="The DevOps Rite" />
+    <meta name="theme-color" content="#232f3e" />
+
+    <!-- App/Branding meta -->
+    <meta name="application-name" content="MIUI LSA/LSAV Decryptor" />
+    <meta name="apple-mobile-web-app-title" content="MIUI Decryptor" />
+    <link rel="apple-touch-icon" href="TDRcropped.jpg" />
+
+    <!-- Preconnect/DNS-prefetch for performance -->
+    <link rel="preconnect" href="https://api.web3forms.com" crossorigin>
+    <link rel="dns-prefetch" href="//api.web3forms.com">
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+    <link rel="dns-prefetch" href="//www.youtube.com">
+
+    <!-- Extra meta hygiene -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="referrer" content="origin-when-cross-origin">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://devopsrite.vercel.app/miui-lsa-decryptor" />
+    <meta property="og:title" content="MIUI LSA/LSAV Decryptor – Online Xiaomi MIUI Backup Decryption" />
+    <meta property="og:description" content="Decrypt MIUI .lsa and .lsav files (≤50MB) quickly and securely in your browser." />
+    <meta property="og:image" content="TDRcropped.jpg" />
+    <meta property="og:site_name" content="The DevOps Rite" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:alt" content="The DevOps Rite – MIUI LSA/LSAV Decryptor Logo" />
+    <meta property="og:see_also" content="https://www.youtube.com/@TheDevOpsRite" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MIUI LSA/LSAV Decryptor – Online Xiaomi MIUI Backup Decryption" />
+    <meta name="twitter:description" content="Free web tool to decrypt Xiaomi MIUI .lsa and .lsav backup files up to 50MB." />
+    <meta name="twitter:image" content="TDRcropped.jpg" />
+    <meta name="twitter:image:alt" content="The DevOps Rite – MIUI LSA/LSAV Decryptor Logo" />
+    <meta name="twitter:site" content="@TheDevOpsRite" />
+    <meta name="twitter:creator" content="@TheDevOpsRite" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@graph": [
+	    {
+	      "@type": "WebSite",
+	      "name": "The DevOps Rite",
+	      "url": "https://devopsrite.vercel.app/",
+	      "inLanguage": "en",
+	      "description": "DevOps resources, tools, and the MIUI LSA/LSAV decryptor."
+	    },
+	    {
+	      "@type": "WebApplication",
+	      "name": "MIUI LSA/LSAV Decryptor",
+	      "applicationCategory": "SecurityApplication",
+	      "operatingSystem": "Any",
+	      "url": "https://devopsrite.vercel.app/miui-lsa-decryptor",
+	      "image": "TDRcropped.jpg",
+	      "description": "Decrypt Xiaomi MIUI backup files (.lsa, .lsav) up to 50MB directly in your browser.",
+	      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+	      "publisher": { "@type": "Organization", "name": "The DevOps Rite", "url": "https://devopsrite.vercel.app/" }
+	    },
+	    {
+	      "@type": "Organization",
+	      "name": "The DevOps Rite",
+	      "url": "https://devopsrite.vercel.app/",
+	      "logo": "TDRcropped.jpg",
+	      "sameAs": ["https://www.youtube.com/@TheDevOpsRite"]
+	    }
+	  ]
+	}
+	</script>
+    <script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "FAQPage",
+	  "mainEntity": [
+	    {
+	      "@type": "Question",
+	      "name": "What file types are supported?",
+	      "acceptedAnswer": { "@type": "Answer", "text": "This tool supports Xiaomi MIUI backup files with .lsa and .lsav extensions." }
+	    },
+	    {
+	      "@type": "Question",
+	      "name": "What is the maximum upload size?",
+	      "acceptedAnswer": { "@type": "Answer", "text": "You can upload files up to 50MB." }
+	    },
+	    {
+	      "@type": "Question",
+	      "name": "Is the decryption done in the browser?",
+	      "acceptedAnswer": { "@type": "Answer", "text": "Yes, decryption runs client-side in your browser for speed and privacy." }
+	    },
+	    {
+	      "@type": "Question",
+	      "name": "Do I need to install anything?",
+	      "acceptedAnswer": { "@type": "Answer", "text": "No installation is required. Just open the page, select your files, and click Decrypt Now." }
+	    }
+	  ]
+	}
+	</script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="google-site-verification" content="s-gvdWNnKbrbmfYEW3cnsYLLIVwnXBIJ9R6yMoLW_kk" />
@@ -72,6 +192,16 @@
             text-decoration: none;
 
         }
+
+        /* Visually hidden utility for accessible labels */
+        .visually-hidden {
+            position: absolute !important;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px);
+            white-space: nowrap;
+        }
     </style>
     <!-- ensure background and loading video styles are applied immediately -->
     <style>
@@ -126,20 +256,22 @@
 
 
     <div class="container">
-        <img src="TDRcropped.jpg" alt="Channel Logo" class="main-logo">
+        <img src="TDRcropped.jpg" alt="The DevOps Rite – MIUI LSA/LSAV Decryptor Logo" class="main-logo">
         <h1>MIUI LSA/LSAV Decryptor</h1>
         <p>Max. upload limit: 50MB</p>
         <div id="uploadForm">
+            <!-- Accessible label for file input -->
+            <label for="fileInput" class="visually-hidden">Select MIUI backup files (.lsa, .lsav)</label>
             <input type="file" id="fileInput" multiple accept=".lsa,.lsav">
-
-            <button type="button" id="decryptBtn">Decrypt Now</button>
+            <!-- aria-label for clarity -->
+            <button type="button" id="decryptBtn" aria-label="Decrypt selected MIUI .lsa and .lsav files">Decrypt Now</button>
 
         </div>
         <div id="result"></div>
-        <button id="downloadAll" style="display:none;">Download All</button>
+        <button id="downloadAll" style="display:none;" aria-label="Download all decrypted files as an archive">Download All</button>
         <br>
         <p>Your feedback matters, give your feedback below✍🏼 </p>
-        <button id="feedbackBtn" type="button">Feedback</button>
+        <button id="feedbackBtn" type="button" aria-label="Open feedback form">Feedback</button>
     </div>
 
     <div id="feedbackPopup" class="feedback-popup" style="display:none;">
@@ -219,18 +351,17 @@
     <script src="script.js"></script>
     <!-- Promotional note -->
     <div class="promo-note">
-        <p style="color: black;"> If You want hand written notes for free, just visit <a
-                href="https://devopsrite.vercel.app/" target="_blank">my website</a> and subscribe my <a
-                href="https://www.youtube.com/@TheDevOpsRite" target="_blank">Youtube Channel</a> and send the
-            screenshot and get any
-            handwritten notes for free </p>
+        <p style="color: black;"> If You want hand written notes for free, just visit
+            <a href="https://devopsrite.vercel.app/" target="_blank" rel="noopener noreferrer">my website</a>
+            and subscribe my
+            <a href="https://www.youtube.com/@TheDevOpsRite" target="_blank" rel="noopener noreferrer">Youtube Channel</a>
+            and send the screenshot and get any handwritten notes for free
+        </p>
     </div>
     <!-- Floating icon stack: update hrefs below to your websites -->
     <div class="floating-stack">
-        <a id="earthLink" class="floating-icon" href="https://devopsrite.vercel.app/" target="_blank"
-            title="Open website">🌐</a>
-        <a id="youtubeLink" class="floating-icon youtube" href="https://www.youtube.com/@TheDevOpsRite" target="_blank"
-            title="YouTube Channel">
+        <a id="earthLink" class="floating-icon" href="https://devopsrite.vercel.app/" target="_blank" rel="noopener noreferrer" title="Open website">🌐</a>
+        <a id="youtubeLink" class="floating-icon youtube" href="https://www.youtube.com/@TheDevOpsRite" target="_blank" rel="noopener noreferrer" title="YouTube Channel">
             <!-- YouTube play triangle SVG for crisp icon -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"
                 aria-hidden="true">
@@ -241,6 +372,9 @@
             </svg>
         </a>
     </div>
+    <noscript>
+        This tool requires JavaScript to decrypt MIUI .lsa and .lsav files. Enable JavaScript and reload the page.
+    </noscript>
 </body>
 
 </html>

@@ -1,0 +1,15 @@
+{
+  "name": "MIUI LSA/LSAV Decryptor",
+  "short_name": "MIUI Decryptor",
+  "lang": "en",
+  "start_url": "/miui-lsa-decryptor",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#232f3e",
+  "theme_color": "#232f3e",
+  "description": "Decrypt Xiaomi MIUI backup files (.lsa, .lsav) up to 50MB in your browser.",
+  "icons": [
+    { "src": "favicon.ico", "sizes": "48x48", "type": "image/x-icon" },
+    { "src": "TDRcropped.jpg", "sizes": "512x512", "type": "image/jpeg" }
+  ]
+}
